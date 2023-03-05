@@ -12,7 +12,6 @@ In this project, I scraped news data (from [thedailystar.net](https://www.thedai
 
 Customizations:
 - custom scrapy command to run scrapy spiders from django command line. 
-- 
 ``` 
 python manage.py news_crawler
 ```
