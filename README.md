@@ -12,8 +12,11 @@ Welcome to the dailystarscraper repository!
 In this project, I scraped news data (from [thedailystar.net](https://www.thedailystar.net)) using scrapy and integrated it with Django. The data is stored in a SQLite database.
 
 Customizations:
-- custom scrapy command to run scrapy spiders from django command line. (ex- `python manage.py <spider_name>`)
-
+- custom scrapy command to run scrapy spiders from django command line. 
+- 
+``` 
+python manage.py news_crawler
+```
 ## Run   
 
 Create a python virtual environment and run these commands from root directory-
@@ -47,4 +50,13 @@ user-agents==2.2.0
 lxml==4.9.2
 pycparser==2.21
 ```
+
+## Preview
+
+![Screenshot (147)](https://user-images.githubusercontent.com/40755491/222971951-72d4df5f-6ef8-40d2-a86a-1c15447f6441.png)
+
+![image](https://user-images.githubusercontent.com/40755491/222971868-3e60bbaf-183d-4146-b3f3-500f9f3a7910.png)
+
+![image](https://user-images.githubusercontent.com/40755491/222971790-376f4e98-55f8-483a-9ee8-491d1f88842e.png)
+
 
