@@ -12,7 +12,7 @@ Web scraping with Scrapy and integrate with Django
 
 Welcome to the BdNews Scraper repository!
 
-In this project, I scraped news data (from [thedailystar.net](https://www.thedailystar.net/), [daily-sun.com/](https://www.daily-sun.com/) ,[thefinancialexpress.com.bd](https://thefinancialexpress.com.bd/)) using scrapy and integrated it with Django. The data is stored in a PostgreSQL database.
+In this project, I scraped news data (from [thedailystar.net](https://www.thedailystar.net/), [daily-sun.com](https://www.daily-sun.com/) ,[thefinancialexpress.com.bd](https://thefinancialexpress.com.bd/)) using scrapy and integrated it with Django. The data is stored in a PostgreSQL database.
 
 Customizations:
 - custom scrapy command to run scrapy spiders from django command line. (ex- `python manage.py <spider_name>`)
