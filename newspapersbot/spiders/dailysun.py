@@ -11,12 +11,12 @@ class DailysunSpider(scrapy.Spider):
     def parse(self, response):
         links = response.css('.nav-item a ::text').extract()[:-5]
         links = ['https://www.daily-sun.com/online/' + x  for x in links]
-        yield from response.follow_all(links[:2], self.news_links)
+        yield from response.follow_all(links, self.news_links)
 
     def news_links(self, response):
         links = response.css('.bg a ::attr(href)').extract()
         links = [links.replace(".", "https://www.daily-sun.com") for links in links]
-        yield from response.follow_all(links[:2], self.parsenews)
+        yield from response.follow_all(links, self.parsenews)
 
     def parsenews(self, response):
         title = ''.join(response.css('.title h1 ::text').extract())
@@ -24,8 +24,8 @@ class DailysunSpider(scrapy.Spider):
         article = ''.join(response.css('.container .mt-3 ::text').extract())
         item = NewspapersbotItem()
         item['title'] = title
-        item[date] = date
-        item[article] = article
+        item['date'] = date
+        item['article'] = article
         yield item
         
        
