@@ -8,6 +8,7 @@
 from itemadapter import ItemAdapter
 
 
-class DailystarbotPipeline:
+class NewspapersbotPipeline:
     def process_item(self, item, spider):
+        item.save()
         return item

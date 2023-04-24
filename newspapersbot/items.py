@@ -2,11 +2,11 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
-import scrapy
-from crawler.models import New
-from scrapy_djangoitem import DjangoItem
 
-class DailystarbotItem(DjangoItem):
+import scrapy
+from scrapy_djangoitem import DjangoItem
+from app.models import  Article
+class NewspapersbotItem(DjangoItem):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    django_model = New
+    django_model = Article
