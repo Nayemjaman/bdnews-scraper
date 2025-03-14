@@ -1,6 +1,6 @@
-# bdnews-scraper
+# bdnews-scraper: Web Scraping News Aggregator
 
-Web scraping with Scrapy and integrate with Django
+Web scraping with Scrapy and integrated with Django
 
 
 </hr>
